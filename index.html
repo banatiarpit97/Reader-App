@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="" type="image/png">
+    <title></title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+
+<div data-role="page" id="page1" data-theme="a">
+    <div data-role="header">
+        
+    </div>
+    <div role="main" class="ui-content">
+        <div class="header">
+            <h1>Speed Reader App</h1>
+            <p>For an efficient reading experience!</p>
+        </div>
+    <div id="controls">
+        <div class="ui-grid-a">
+            <div class="ui-block-a">
+                FONT SIZE : <span id="fontsize">65px</span>
+            </div>
+            <div class="ui-block-b">
+                <span id="speed">300 </span>WORDS PER MINUTE
+            </div>
+        </div>
+        <div class="ui-grid-a">
+            <div class="ui-block-a">
+                <form class="full-width-slider">
+                        <input type="range" name="fontsizeSlider" id="fontsizeSlider" min="20" max="100" value="50" data-highlight="true">
+                </form>
+            </div>
+            <div class="ui-block-b">
+                <form class="full-width-slider">
+                        <input type="range" name="speedSlider" id="speedSlider" min="50" max="600" value="300" data-highlight="true">
+                </form>
+            </div>
+        </div>
+
+        <form class="full-width-slider">
+            <label for="progressSlider">Progress: <span id="progress">0</span>%</label>
+            <input type="range" name="progressSlider" id="progressSlider" min="0" max="100" value="0" data-highlight = "true">
+        </form>
+    </div>  
+        <div id="result">Word</div>
+        <div id="error">Please put text in the box</div>
+        <div id="inputs">
+            <textarea id="userinput"></textarea>
+            <button id="start">Start Reading</button>
+            <button id="new">New</button>
+            <button id="pause">Pause</button>
+            <button id="resume">Resume</button>
+        </div>
+    </div>
+    <div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#page1" data-transition="pop" data-icon="home" class="ui-btn-active ui-state-persist">Home
+                </a></li>
+                <li><a href="#page2" data-transition="pop" data-icon="info">About
+                </a></li>
+                <li><a href="#page3" data-transition="pop" data-icon="mail">Contact
+                </a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="page2" data-theme="a">
+    <div data-role="header">
+        
+    </div>
+    <div role="main" class="ui-content">
+
+    </div>
+    <div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#page1" data-transition="flip" data-icon="home">Home
+                </a></li>
+                <li><a href="#page2" data-transition="pop" data-icon="info" class="ui-btn-active ui-state-persist">About
+                </a></li>
+                <li><a href="#page3" data-transition="pop" data-icon="mail">Contact
+                </a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="page3" data-theme="a">
+    <div data-role="header">
+        
+    </div>
+    <div role="main" class="ui-content">
+        
+    </div>
+    <div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#page1" data-transition="pop" data-icon="home">Home
+                </a></li>
+                <li><a href="#page2" data-transition="pop" data-icon="info">About
+                </a></li>
+                <li><a href="#page3" data-transition="pop" data-icon="mail" class="ui-btn-active ui-state-persist">Contact
+                </a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!--Script FIles included here -->
+
+<script type="text/javascript" src="js/main.js"></script>
+<!--Script FIles included here -->
+
+</body>
+
+</html>
